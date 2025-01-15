@@ -17,10 +17,19 @@ async function data(reg) {
     let datas = await API.json()
     localStorage.setItem('data', JSON.stringify(datas))
     // location.reload()
-    console.log(datas);
+    console.log(datas.hijri_date);
+
+
     times()
     dataWeek(reg)
     timesWeek()
+
+    let hijriy = document.getElementById('hijriy') 
+    let { day,month }  = datas.hijri_date
+    hijriy.innerHTML = `${month}, ${day}`
+    // console.log(hijriy);
+
+
 }
 
 
