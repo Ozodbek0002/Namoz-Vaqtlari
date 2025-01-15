@@ -25,10 +25,10 @@ async function data(reg) {
 
 
 if (!localStorage.getItem('data')) {
-    mintaqaRes.innerHTML = 'Toshkent'
-    localStorage.setItem('city', 'Toshkent')
-    select.value = 'Toshkent'
-    data('Toshkent')
+    mintaqaRes.innerHTML = 'Xorazm'
+    localStorage.setItem('city', 'Xorazm')
+    select.value = 'Xorazm'
+    data('Xorazm')
 
 }
 
