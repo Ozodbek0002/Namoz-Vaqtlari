@@ -130,7 +130,6 @@ async function dataWeek(reg) {
     let datas = await API.json()
     localStorage.setItem('dataWeek', JSON.stringify(datas))
     // location.reload()
-    console.log(datas);
     timesWeek()
 }
 
